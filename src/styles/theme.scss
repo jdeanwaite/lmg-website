@@ -1,6 +1,7 @@
 $colors: ( // Overwrite or add colors here.
 );
 $theme-colors: ( // Overwrite or add colors here.
+  primary: #00695C
 );
 // Overwrite any other bootstrap files as necessary.
 @import "node_modules/bootstrap/scss/bootstrap";

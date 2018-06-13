@@ -34,33 +34,27 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="primary" dark expand="md">
           <div className="container">
             <Link className="navbar-brand" to="/" onClick={this.close}>
-              Gatsby Bootstrap Starter
+              Learn My Gospel
             </Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <Link className="nav-link" to="/spreadsheets" onClick={this.close}>
-                    Components
+                    About
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+                  <Link className="nav-link" to="/spreadsheets" onClick={this.close}>
+                    Support
+                  </Link>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Options
-                  </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem>Option 1</DropdownItem>
-                    <DropdownItem>Option 2</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Reset</DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+                <NavItem>
+                  <NavLink href="https://www.iubenda.com/privacy-policy/64047423">Privacy Policy</NavLink>
+                </NavItem>
               </Nav>
             </Collapse>
           </div>
