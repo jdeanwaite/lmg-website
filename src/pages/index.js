@@ -16,8 +16,8 @@ const IndexPage = () => (
     </p>
     <h1 id="support">Support</h1>
     <p>
-      If you have questions or need support for the app, please contact
-      Justin at{' '}
+      If you have questions or need support for the app, please contact Justin
+      at{' '}
       <a href="emailto:missionarytrainingapp@gmail.com">
         missionarytrainingapp@gmail.com
       </a>.

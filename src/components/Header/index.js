@@ -6,30 +6,26 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  NavLink
 } from 'reactstrap';
 import './header.scss';
 
 class Header extends React.Component {
   state = {
     isOpen: false,
-  }
+  };
 
   toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen,
     });
-  }
+  };
 
   close = () => {
     this.setState({
       isOpen: false,
     });
-  }
+  };
 
   render() {
     return (
@@ -43,17 +39,19 @@ class Header extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link className="nav-link" to="/spreadsheets" onClick={this.close}>
+                  <NavLink href="#about" onClick={this.close}>
                     About
-                  </Link>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <Link className="nav-link" to="/spreadsheets" onClick={this.close}>
+                  <NavLink href="#support" onClick={this.close}>
                     Support
-                  </Link>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://www.iubenda.com/privacy-policy/64047423">Privacy Policy</NavLink>
+                  <NavLink href="https://www.iubenda.com/privacy-policy/64047423" target="_blank">
+                    Privacy Policy
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
